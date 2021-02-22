@@ -1,0 +1,25 @@
+.body {
+    color: black;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+}
+
+.wraper{
+     
+      text-align: center;
+      font-family: 'Quicksand', sans-serif;
+      /* color: black; */
+
+      
+  }
+  
+  #clock {
+    font-size: 150px;
+    /* color: black; */
+    
+  }
+  
+  h1 {
+  font-size: 70px;
+  }
