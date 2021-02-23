@@ -46,7 +46,7 @@ function landingBaground() {
      }
      else { greeting.textContent = textDay;
         document.body.style.backgroundImage = "url('images/2.jpg')";
-        document.body.style.color = 'RosyBrown';
+        document.body.style.color = 'Brown';
         document.body.style.backgroundSize = "100%";
     };
  }
