@@ -3,10 +3,11 @@
     width: min-content;
     height: min-content;
     text-align: center;
+    
+    background-size: 100%;
 }
 
 .wraper{
-     
       text-align: center;
       font-family: 'Quicksand', sans-serif;
       /* color: black; */
@@ -16,7 +17,6 @@
   
   #clock {
     font-size: 150px;
-    /* color: black; */
     
   }
   

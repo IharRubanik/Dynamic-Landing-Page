@@ -3,10 +3,10 @@ let clock = document.getElementById('clock'),
     greeting = document.getElementById('greeting');
 
 function landingClock() {
-    let time = new Date();
-    let h = time.getHours().toString();
-    let m = time.getMinutes().toString();
-    let s = time.getSeconds().toString();
+    let time = new Date(),
+    h = time.getHours().toString(),
+    m = time.getMinutes().toString(),
+    s = time.getSeconds().toString();
 
     if (h.length < 2) {
         h = '0' + h;
@@ -30,18 +30,20 @@ function landingBaground() {
     textMorning = "Доброе утро",
     time = new Date(),
     h = time.getHours();
+    console.log(h);
 
-  if (h < 4) {  greeting.textContent = textNight;
-    document.body.style.backgroundImage = "url('..//images/3.jpg')";
+  if ( h > 0 && h < 5 ) {  greeting.textContent = textNight;
+    document.body.style.backgroundImage = "url('images/3.jpg')";
     document.body.style.color = 'white';
      }
-     else if  (h < 11) { greeting.textContent = textMorning;
-        document.body.style.backgroundImage = "url('..//images/1.jpg')";
+     else if  (h >= 5 && h < 11) { greeting.textContent = textMorning;
+        document.body.style.backgroundImage = "url('images/1.jpg')";
         
 
      }
-     else { greeting.textContent = textNight;
-        document.body.style.backgroundImage = "url('..//images/2.jpg')";
+     else { greeting.textContent = textDay;
+        document.body.style.backgroundImage = "url('images/2.jpg')";
+        document.body.style.color = 'RosyBrown';
     };
  }
  landingBaground();
