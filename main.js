@@ -32,7 +32,7 @@ function landingBaground() {
     h = time.getHours();
     console.log(h);
 
-  if ( h > 0 && h < 5 ) {  greeting.textContent = textNight;
+  if ( h >= 0 && h < 5 ) {  greeting.textContent = textNight;
     document.body.style.backgroundImage = "url('images/3.jpg')";
     document.body.style.backgroundSize = "100%";
 
